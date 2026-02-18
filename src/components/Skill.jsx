@@ -1,12 +1,36 @@
 
-
-export const Skill = () => {
+export const Skill = ({
+    skill,
+    icon
+}) => {
     return (<>
-        <div className="glass-card p-6 rounded-xl flex flex-col items-center gap-4 group hover:bg-primary/10 transition-colors cursor-default border-white/5">
-            <div className="size-16 rounded-lg bg-background-dark flex items-center justify-center text-primary group-hover:shadow-[0_0_15px_rgba(13,204,242,0.4)] transition-shadow">
-                <span className="material-symbols-outlined text-4xl">database</span>
-            </div>
-            <span className="font-bold text-white tracking-widest text-xs uppercase">Backend</span>
-        </div>
+       <div
+  className="
+    glass-card
+    p-6
+    rounded-xl
+    w-full
+    max-w-xs
+    flex
+    flex-col
+    items-center
+    gap-4
+    text-center
+    transition-all
+    hover:bg-primary/10
+    hover:shadow-[0_0_15px_rgba(13,204,242,0.4)]
+    hover:scale-105
+    overflow-hidden
+  "
+>
+  <div className="w-16 h-16 rounded-lg bg-background-dark flex items-center justify-center text-primary shrink-0">
+    {icon}
+  </div>
+
+  <span className="font-bold text-white tracking-widest text-xl mt-5 uppercase break-words">
+    {skill}
+  </span>
+</div>
+
     </>);
 }
