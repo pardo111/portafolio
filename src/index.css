@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(13, 204, 242, 0.1);
+        }
+        .glass-nav {
+            background: rgba(8, 15, 17, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(13, 204, 242, 0.2);
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(13, 204, 242, 0.5), 0 0 20px rgba(13, 204, 242, 0.3);
+        }
+        .neon-border-hover:hover {
+            border-color: #0dccf2;
+            box-shadow: 0 0 15px rgba(13, 204, 242, 0.3);
+            transition: all 0.3s ease;
+        }
+        .mesh-gradient {
+            background-color: #080f11;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(13, 204, 242, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(13, 204, 242, 0.1) 0px, transparent 50%);
+        }
+    
