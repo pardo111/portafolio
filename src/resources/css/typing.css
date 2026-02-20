@@ -1,0 +1,77 @@
+.typewriter {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .15em;
+    width: 0; 
+    display: table; /* Mantiene el cursor pegado al texto */
+    border-right: .15em solid transparent;
+}
+
+/* USAMOS DOS ANIMACIONES:
+   1. La de escribir (write)
+   2. La del parpadeo (blink) -> Solo mientras se escribe
+*/
+.typing1 { 
+    animation: write1 6s infinite steps(13), blink 6s infinite; 
+}
+.typing2 { 
+    animation: write2 6s infinite steps(5), blink 6s infinite; 
+}
+.typing3 { 
+    animation: write3 6s infinite steps(11), blink 6s infinite; 
+}
+.typing4 { 
+    animation: write4 6s infinite steps(7), blink 6s infinite; 
+}
+
+/* --- CONTROL DEL ANCHO --- */
+@keyframes write1 {
+    0% { width: 0; }
+    15%, 95% { width: 13ch; }
+    100% { width: 0; }
+}
+
+@keyframes write2 {
+    0%, 20% { width: 0; }
+    35%, 90% { width: 5ch; }
+    95%, 100% { width: 0; }
+}
+
+@keyframes write3 {
+    0%, 40% { width: 0; }
+    55%, 85% { width: 11ch; }
+    90%, 100% { width: 0; }
+}
+
+@keyframes write4 {
+    0%, 60% { width: 0; }
+    75%, 80% { width: 7ch; }
+    85%, 100% { width: 0; }
+}
+
+/* --- CONTROL DEL PARPADEO (CURSOR) --- */
+/* Sincronizado para que solo sea naranja cuando el texto se está moviendo */
+@keyframes blink {
+    /* Línea 1 activa (0-15%) */
+    0%, 14% { border-color: orange; }
+    15% { border-color: transparent; }
+
+    /* Línea 2 activa (21-35%) */
+    20% { border-color: transparent; }
+    21%, 34% { border-color: orange; }
+    35% { border-color: transparent; }
+
+    /* Línea 3 activa (41-55%) */
+    40% { border-color: transparent; }
+    41%, 54% { border-color: orange; }
+    55% { border-color: transparent; }
+
+    /* Línea 4 activa (61-75%) */
+    60% { border-color: transparent; }
+    61%, 74% { border-color: orange; }
+    75% { border-color: transparent; }
+    
+    100% { border-color: transparent; }
+}

@@ -1,3 +1,5 @@
+import { Typing } from "../components/Typing";
+
 export const Hero = () => {
 
     return (<>
@@ -11,15 +13,16 @@ export const Hero = () => {
                         </span>
                         Disponible para nuevos proyectos
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 uppercase tracking-tighter">
-                        Transformando <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300 neon-glow">Ideas</span> en Realidad Digital
-                    </h1>
-                    <p className="text-lg md:text-xl text-slate-400 max-w-xl mb-10 font-light leading-relaxed">
-                        Desarrollador Full Stack especializado en crear experiencias web futuristas con <span className="text-white font-medium">React</span>, <span className="text-white font-medium">Node.js</span>, <span className="text-white font-medium">PHP con Laravel</span >, <span className="text-white font-medium">Java con Spring Boot</span> .
-                    </p>
-                   
+                    <div>
+                        <Typing className="max-h-1/2"/>
+                        <p className="min-h-1/2 text-lg md:text-xl text-slate-400 max-w-xl mb-10 font-light leading-relaxed">
+                            Desarrollador Full Stack especializado en crear experiencias web futuristas con <span className="text-white font-medium">React</span>, <span className="text-white font-medium">Node.js</span>, <span className="text-white font-medium">PHP con Laravel</span >, <span className="text-white font-medium">Java con Spring Boot</span> .
+                        </p>
+
+                    </div>
+
                 </div>
-                <div className="relative flex justify-center lg:justify-end">
+                <div className="  justify-center lg:justify-end hidden z-1  lg:flex">
                     <div className="relative w-full max-w-[500px] aspect-square">
                         <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
                         <div className="relative z-10 w-full h-full glass-card rounded-2xl p-4 overflow-hidden group">

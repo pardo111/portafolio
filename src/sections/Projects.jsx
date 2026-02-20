@@ -1,4 +1,5 @@
 import { Project } from "../components/Project"
+import { clinica } from "../assets/clinica_java/clinica.js";
 
 
 export const Projects = () => {
@@ -15,7 +16,14 @@ export const Projects = () => {
                     <p className="text-slate-400 max-w-sm">Una selección de mis trabajos más recientes construidos.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <Project></Project>
+
+                    <Project
+                        title="Sistema de Gestión para Clínica Psicologica"
+                        description="Desarrollé un sistema de gestión para una clínica psicológica utilizando Springboot Java, MySQL y React. El sistema permite a los usuarios gestionar pacientes, citas, historiales médicos y registrar facturación de manera eficiente. Implementé funcionalidades como la programación de citas, el seguimiento de tratamientos y la generación de informes para mejorar la organización y el flujo de trabajo en la clínica."
+                        imgs={clinica}
+                        img={clinica[1]}
+                        date="2024"
+                    />
                 </div>
             </div>
         </section>
